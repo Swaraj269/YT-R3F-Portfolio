@@ -3,7 +3,7 @@ import React from "react";
 import Experience from "./Experience";
 import { OrbitControls } from "@react-three/drei";
 
-const Three = () => {
+const MainThree = () => {
   return (
     <div className="three-container">
       <Canvas>
@@ -11,7 +11,7 @@ const Three = () => {
         <Experience />
       </Canvas>
     </div>
-  );
-};
+  )
+}
 
-export default Three;
+export default MainThree

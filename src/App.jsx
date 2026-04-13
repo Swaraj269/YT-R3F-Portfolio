@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Content from "./Components/Content";
-import Three from "./Components/three";
+import MainThree from "./Components/MainThree";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -28,11 +28,9 @@ const App = () => {
 
   return (
     <>
-      <Three />
+      <MainThree />
       <div id="smooth-wrapper">
-        <div id="smooth-content">
-          {scrollReady ? <Content /> : null}
-        </div>
+        <div id="smooth-content">{scrollReady ? <Content /> : null}</div>
       </div>
     </>
   );
